@@ -18,7 +18,6 @@ package com.example.android.sunshine;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
-
 import com.example.android.sunshine.utilities.SunshineDateUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         // (4) Append each String from the fake weather data array to the TextView
         for (String weatherData : dummyWeatherData) {
-            mWeatherDataTextView.append(weatherData);
+            mWeatherDataTextView.append(weatherData + "\n\n\n");
         }
     }
 }
